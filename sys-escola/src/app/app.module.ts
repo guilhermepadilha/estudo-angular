@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
 import { FormsModule } from '@angular/forms';
+import { ListaAlunosComponent } from './lista-alunos/lista-alunos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastroAlunoComponent
+    CadastroAlunoComponent,
+    ListaAlunosComponent
   ],
   imports: [
     BrowserModule,

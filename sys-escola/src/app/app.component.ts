@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sys-escola';
+  alunos: any[] = [];
+
+  cadastrar ($event){
+    this.alunos.push({...$event, data : new Date()});
+    console.log(this.alunos);
+  }
 }
