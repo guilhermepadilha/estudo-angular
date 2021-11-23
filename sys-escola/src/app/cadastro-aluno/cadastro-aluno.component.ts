@@ -10,6 +10,7 @@ export class CadastroAlunoComponent {
     @Output() aoCadastrar = new EventEmitter<any>();
 
     nome : string;
+    data : string;
 
     cadastrar(){
         console.log("Solicitada o cadastro do aluno ");
@@ -18,6 +19,7 @@ export class CadastroAlunoComponent {
         const aluno = {nome : this.nome};
         this.aoCadastrar.emit(aluno);
         this.limparCampos();
+
 
     } 
     
