@@ -1,0 +1,17 @@
+<section>
+
+    <h1>Lista Alunos!</h1>
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Data</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let aluno of alunosInput">
+                <td>{{aluno.nome}}</td>
+                <td>{{aluno.data |  date: 'dd/MM/yyyy HH:mm:ss'}}</td>
+    
+            </tr>
+        </tbody>    
+    </table>
+</section>
