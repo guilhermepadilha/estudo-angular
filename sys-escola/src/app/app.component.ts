@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlunoService } from './services/aluno.service';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'sys-escola';
   alunos: any[] = [];
-
+  constructor(private service : AlunoService){}
   cadastrar ($event){
-    this.alunos.push({...$event, data : new Date()});
-    console.log(this.alunos);
+      this.service.adicionar($event);
   }
 }
