@@ -1,5 +1,18 @@
-<form (ngSubmit)="cadastrar()"> 
-    <h2>Cadastro Aluno</h2>
-    <input id="nome" name="nome" [(ngModel)]="nome" type="text"/>
-    <button type="submit">Cadastrar</button> 
-</form> 
+<section class="container">
+    <form class="formulario" (ngSubmit)="cadastrar()"> 
+        <h2 class="formulario__titulo">Cadastro de  Alunos</h2>
+        <div class="form-field">
+            <label class="form-field__label" for="nome">Nome</label>
+            <input class="form-field__input" id="nome" name="nome" [(ngModel)]="nome" type="text"/>
+
+        </div>
+        <div class="form-field">
+            <label class="form-field__label" for="idade">Idade</label>
+            <input class="form-field__input" id="idade" name="idade" [(ngModel)]="idade" type="text"/>
+
+        </div>
+        <div class="botao-wrapper">
+            <button class="botao" type="submit" >Cadastrar</button> 
+        </div>
+    </form> 
+</section>
