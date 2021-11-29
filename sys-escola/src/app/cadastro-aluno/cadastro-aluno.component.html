@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <section class="container">
     <form class="formulario" (ngSubmit)="cadastrar()"> 
         <h2 class="formulario__titulo">Cadastro de  Alunos</h2>
@@ -16,3 +17,14 @@
         </div>
     </form> 
 </section>
+=======
+<form (ngSubmit)="cadastrar()"> 
+    <h2>Cadastro Aluno</h2>
+    <input id="nome" name="nome" placeholder="Nome Completo" [(ngModel)]="nome" type="text"/>
+    <br>
+    <p><b>Data de Nascimento:</b></p>
+    <input id="data" name="data" [(ngModel)]="data" type="date"/>
+    <br> <br>
+    <button type="submit">Cadastrar</button> 
+</form> 
+>>>>>>> 49fa33fa826e7a179684013f15973d7e29525bc9
